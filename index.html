@@ -5,211 +5,754 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sitio web institucional de ASOTOQUECHA, Distrito de Adecuación de Tierras de Pequeña Escala de Toquecha y Tota.">
   <title>ASOTOQUECHA | Distrito de Riego de la Vereda Toquechá</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/jpeg" href="assets/logo-asotoquecha.jpeg">
 </head>
+
 <body>
-  <header class="site-header" id="inicio">
-    <div class="container nav-wrap">
-      <a class="brand" href="#inicio" aria-label="ASOTOQUECHA inicio">
-        <div class="brand-mark"><img src="assets/logo-asotoquecha.jpeg" alt="Logo oficial de ASOTOQUECHA"></div>
-        <div>
-          <strong>ASOTOQUECHA</strong>
-          <span>Distrito de Adecuación de Tierras de Pequeña Escala<br>de Toquecha y Tota</span>
-        </div>
+
+<header class="site-header" id="inicio">
+  <div class="container nav-wrap">
+
+    <a class="brand" href="#inicio" aria-label="ASOTOQUECHA inicio">
+      <div class="brand-mark">
+        <img src="assets/logo-asotoquecha.jpeg" alt="Logo oficial de ASOTOQUECHA">
+      </div>
+
+      <div>
+        <strong>ASOTOQUECHA</strong>
+        <span>
+          Distrito de Adecuación de Tierras de Pequeña Escala<br>
+          de Toquecha y Tota
+        </span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#distrito">Distrito de riego</a>
+      <a href="#usuarios">Para los usuarios</a>
+      <a href="#noticias">Noticias</a>
+      <a href="#transparencia">Transparencia</a>
+      <a href="#contacto">Contacto</a>
+      <button class="portal-btn" id="portalBtn">👤 Portal del Usuario</button>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" aria-label="Presentación">
+
+    <div class="hero-slide active"
+      style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85')">
+    </div>
+
+    <div class="hero-slide"
+      style="background-image:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1800&q=85')">
+    </div>
+
+    <div class="hero-slide"
+      style="background-image:url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1800&q=85')">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+      <div class="hero-brand-card">
+        <img src="assets/logo-asotoquecha.jpeg" alt="Logo oficial de ASOTOQUECHA">
+      </div>
+
+      <p class="eyebrow">DISTRITO DE ADECUACIÓN DE TIERRAS DE PEQUEÑA ESCALA</p>
+
+      <h1>ASOTOQUECHA</h1>
+      <h2>Toquecha y Tota</h2>
+
+      <p class="hero-text">
+        Información institucional, comunicados y documentos oficiales para los asociados y usuarios del distrito de riego.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#quienes">Conócenos <span>→</span></a>
+        <a class="btn btn-outline" href="#distrito">Nuestro distrito <span>→</span></a>
+      </div>
+
+    </div>
+
+    <div class="slider-dots" aria-label="Cambiar imagen">
+      <button class="dot active" data-slide="0"></button>
+      <button class="dot" data-slide="1"></button>
+      <button class="dot" data-slide="2"></button>
+    </div>
+
+    <div class="hero-phrase">
+      El agua<br>
+      <em>también es vida</em>
+    </div>
+
+  </section>
+
+
+  <section class="quick-links">
+    <div class="container quick-grid">
+
+      <a href="#distrito">
+        <span class="quick-icon">💧</span>
+        <span>
+          <b>Información del<br>Distrito de Riego</b>
+          <small>Conoce su infraestructura</small>
+        </span>
       </a>
 
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <a href="#usuarios">
+        <span class="quick-icon">👤</span>
+        <span>
+          <b>Para los Usuarios</b>
+          <small>Horarios, trámites y más</small>
+        </span>
+      </a>
 
-      <nav class="main-nav" aria-label="Navegación principal">
-        <a class="active" href="#inicio">Inicio</a>
-        <a href="#quienes">Quiénes somos</a>
-        <a href="#distrito">Distrito de riego</a>
-        <a href="#usuarios">Para los usuarios</a>
-        <a href="#noticias">Noticias</a>
-        <a href="#transparencia">Transparencia</a>
-        <a href="#contacto">Contacto</a>
-        <button class="portal-btn" id="portalBtn">👤 Portal del Usuario</button>
-      </nav>
+      <a href="#noticias">
+        <span class="quick-icon">📣</span>
+        <span>
+          <b>Noticias y Actividades</b>
+          <small>Entérate de nuestras novedades</small>
+        </span>
+      </a>
+
+      <a href="#transparencia">
+        <span class="quick-icon">📄</span>
+        <span>
+          <b>Transparencia</b>
+          <small>Documentos y reportes</small>
+        </span>
+      </a>
+
+      <a href="#contacto">
+        <span class="quick-icon">✉</span>
+        <span>
+          <b>Contacto</b>
+          <small>Estamos para ayudarte</small>
+        </span>
+      </a>
+
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero" aria-label="Presentación">
-      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85')"></div>
-      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1800&q=85')"></div>
-      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1800&q=85')"></div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="hero-brand-card"><img src="assets/logo-asotoquecha.jpeg" alt="Logo oficial de ASOTOQUECHA"></div>
-        <p class="eyebrow">DISTRITO DE ADECUACIÓN DE TIERRAS DE PEQUEÑA ESCALA</p>
-        <h1>ASOTOQUECHA</h1>
-        <h2>Toquecha y Tota</h2>
-        <p class="hero-text">Información institucional, comunicados y documentos oficiales para los asociados y usuarios del distrito de riego.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#quienes">Conócenos <span>→</span></a>
-          <a class="btn btn-outline" href="#distrito">Nuestro distrito <span>→</span></a>
-        </div>
-      </div>
-      <div class="slider-dots" aria-label="Cambiar imagen">
-        <button class="dot active" data-slide="0"></button>
-        <button class="dot" data-slide="1"></button>
-        <button class="dot" data-slide="2"></button>
-      </div>
-      <div class="hero-phrase">El agua<br><em>también es vida</em></div>
-    </section>
 
-    <section class="quick-links">
-      <div class="container quick-grid">
-        <a href="#distrito"><span class="quick-icon">💧</span><span><b>Información del<br>Distrito de Riego</b><small>Conoce su infraestructura</small></span></a>
-        <a href="#usuarios"><span class="quick-icon">👤</span><span><b>Para los Usuarios</b><small>Horarios, trámites y más</small></span></a>
-        <a href="#noticias"><span class="quick-icon">📣</span><span><b>Noticias y Actividades</b><small>Entérate de nuestras novedades</small></span></a>
-        <a href="#transparencia"><span class="quick-icon">📄</span><span><b>Transparencia</b><small>Documentos y reportes</small></span></a>
-        <a href="#contacto"><span class="quick-icon">✉</span><span><b>Contacto</b><small>Estamos para ayudarte</small></span></a>
-      </div>
-    </section>
+  <section class="section" id="quienes">
+    <div class="container about-grid">
 
-    <section class="section" id="quienes">
-      <div class="container about-grid">
-        <div class="about-image">
-          <img src="https://images.unsplash.com/photo-1523742817554-7e3e9f3c2b45?auto=format&fit=crop&w=900&q=85" alt="Actividad agrícola en zona rural">
-        </div>
-        <div class="about-copy">
-          <p class="section-kicker">● QUIÉNES SOMOS</p>
-          <h2>ASOTOQUECHA</h2>
-          <p>ASOTOQUECHA es el <strong>Distrito de Adecuación de Tierras de Pequeña Escala de Toquecha y Tota</strong>. Esta página reúne información institucional, documentos y comunicados oficiales para sus asociados y usuarios.</p>
-          <a class="text-btn" href="#transparencia">Consultar información oficial →</a>
-        </div>
-        <div class="facts">
-          <div><span>◎</span><b>Nombre oficial</b><p>Distrito de Adecuación de Tierras de Pequeña Escala de Toquecha y Tota “ASOTOQUECHA”.</p></div>
-          <div><span>◉</span><b>Presidencia</b><p>Actualmente, el Representante Legal y Presidente ante la ADR es <strong>Isaac Nossa Montaña</strong>.</p></div>
-          <div><span>♟</span><b>Usuarios registrados</b><p>El listado oficial aportado contiene 160 registros.</p></div>
-          <div><span>🌱</span><b>Documentación</b><p>Consulta estatutos, comunicados y el listado oficial en la sección de transparencia.</p></div>
-        </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1523742817554-7e3e9f3c2b45?auto=format&fit=crop&w=900&q=85"
+             alt="Actividad agrícola en zona rural">
       </div>
-    </section>
 
-    <section class="district" id="distrito">
-      <div class="container district-grid">
-        <div class="district-intro">
-          <div class="round-icon">≋</div>
+      <div class="about-copy">
+
+        <p class="section-kicker">● QUIÉNES SOMOS</p>
+
+        <h2>ASOTOQUECHA</h2>
+
+        <p>
+          ASOTOQUECHA es el
+          <strong>Distrito de Adecuación de Tierras de Pequeña Escala de Toquecha y Tota</strong>.
+          Esta página reúne información institucional, documentos y comunicados oficiales para sus asociados y usuarios.
+        </p>
+
+        <a class="text-btn" href="#transparencia">
+          Consultar información oficial →
+        </a>
+
+      </div>
+
+      <div class="facts">
+
+        <div>
+          <span>◎</span>
+          <b>Nombre oficial</b>
+          <p>
+            Distrito de Adecuación de Tierras de Pequeña Escala de Toquecha y Tota “ASOTOQUECHA”.
+          </p>
+        </div>
+
+        <div>
+          <span>◉</span>
+          <b>Presidencia</b>
+          <p>
+            Actualmente, el Representante Legal y Presidente ante la ADR es
+            <strong>Isaac Nossa Montaña</strong>.
+          </p>
+        </div>
+
+        <div>
+          <span>♟</span>
+          <b>Usuarios registrados</b>
+          <p>
+            El listado oficial aportado contiene 160 registros.
+          </p>
+        </div>
+
+        <div>
+          <span>🌱</span>
+          <b>Documentación</b>
+          <p>
+            Consulta estatutos, comunicados, actas y el listado oficial en la sección de transparencia.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="district" id="distrito">
+    <div class="container district-grid">
+
+      <div class="district-intro">
+
+        <div class="round-icon">≋</div>
+
+        <div>
+          <h2>Distrito de Riego</h2>
+
+          <p>
+            Esta sección presenta información general del distrito.
+            Los datos técnicos específicos deben consultarse en los documentos oficiales publicados por ASOTOQUECHA.
+          </p>
+
+          <a class="btn btn-primary" href="#usuarios">
+            Ver detalles →
+          </a>
+        </div>
+
+      </div>
+
+      <div class="district-features">
+
+        <article>
+          <span>💧</span>
+          <b>Servicio de riego</b>
+          <small>Información para asociados y usuarios</small>
+        </article>
+
+        <article>
+          <span>🛠</span>
+          <b>Operación</b>
+          <small>Consulta las disposiciones oficiales publicadas</small>
+        </article>
+
+        <article>
+          <span>⌘</span>
+          <b>Usuarios</b>
+          <small>Listado oficial disponible en transparencia</small>
+        </article>
+
+        <article>
+          <span>⚙</span>
+          <b>Normativa</b>
+          <small>Estatutos y comunicados oficiales</small>
+        </article>
+
+      </div>
+
+      <img class="district-photo"
+           src="https://images.unsplash.com/photo-1592982537447-6f2a6a0a6b8f?auto=format&fit=crop&w=900&q=85"
+           alt="Canal de riego">
+
+    </div>
+  </section>
+
+
+  <section class="section users" id="usuarios">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-kicker">SERVICIOS PARA LA COMUNIDAD</p>
+          <h2>Para los usuarios</h2>
+        </div>
+
+        <p>
+          Información institucional y documentos oficiales para facilitar la comunicación entre ASOTOQUECHA y sus usuarios.
+        </p>
+
+      </div>
+
+      <div class="cards-4">
+
+        <article class="service-card">
+          <div>📅</div>
+          <h3>Programación de riego</h3>
+          <p>
+            Espacio preparado para publicar los turnos y horarios cuando sean definidos oficialmente.
+          </p>
+          <button class="link-btn" data-modal="programacion">
+            Consultar →
+          </button>
+        </article>
+
+        <article class="service-card">
+          <div>📝</div>
+          <h3>Solicitudes y trámites</h3>
+          <p>
+            Información para presentar solicitudes ante la asociación.
+          </p>
+          <button class="link-btn" data-modal="tramites">
+            Ver información →
+          </button>
+        </article>
+
+        <article class="service-card">
+          <div>💧</div>
+          <h3>Uso eficiente del agua</h3>
+          <p>
+            Recomendaciones para el aprovechamiento responsable del recurso.
+          </p>
+          <button class="link-btn" data-modal="agua">
+            Recomendaciones →
+          </button>
+        </article>
+
+        <article class="service-card">
+          <div>📢</div>
+          <h3>Comunicados</h3>
+          <p>
+            Consulta avisos, reuniones, mantenimientos y convocatorias.
+          </p>
+          <a class="link-btn" href="#noticias">
+            Ver novedades →
+          </a>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="section news-section" id="noticias">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-kicker">ACTUALIDAD</p>
+          <h2>Noticias y actividades</h2>
+        </div>
+
+        <a class="text-btn" href="#noticias">
+          Ver todas →
+        </a>
+
+      </div>
+
+      <div class="news-grid">
+
+        <article class="news-card official-news">
+
+          <div class="news-icon">📢</div>
+
           <div>
-            <h2>Distrito de Riego</h2>
-            <p>Esta sección presenta información general del distrito. Los datos técnicos específicos deben consultarse en los documentos oficiales publicados por ASOTOQUECHA.</p>
-            <a class="btn btn-primary" href="#usuarios">Ver detalles →</a>
+            <small>Comunicado No. 001</small>
+
+            <h3>Información a los asociados y usuarios</h3>
+
+            <p>
+              La Junta Directiva informa sobre suspensión del servicio por obligaciones pendientes,
+              prohibición de alterar contadores, registros, tubería y sellos,
+              y las condiciones para la reconexión.
+            </p>
+
+            <a class="text-btn"
+               href="assets/documentos/Comunicado-001-ASOTOQUECHA.pdf"
+               target="_blank"
+               rel="noopener">
+              Leer comunicado →
+            </a>
+
           </div>
-        </div>
-        <div class="district-features">
-          <article><span>💧</span><b>Servicio de riego</b><small>Información para asociados y usuarios</small></article>
-          <article><span>🛠</span><b>Operación</b><small>Consulta las disposiciones oficiales publicadas</small></article>
-          <article><span>⌘</span><b>Usuarios</b><small>Listado oficial disponible en transparencia</small></article>
-          <article><span>⚙</span><b>Normativa</b><small>Estatutos y comunicados oficiales</small></article>
-        </div>
-        <img class="district-photo" src="https://images.unsplash.com/photo-1592982537447-6f2a6a0a6b8f?auto=format&fit=crop&w=900&q=85" alt="Canal de riego">
-      </div>
-    </section>
 
-    <section class="section users" id="usuarios">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="section-kicker">SERVICIOS PARA LA COMUNIDAD</p><h2>Para los usuarios</h2></div>
-          <p>Información institucional y documentos oficiales para facilitar la comunicación entre ASOTOQUECHA y sus usuarios.</p>
-        </div>
-        <div class="cards-4">
-          <article class="service-card"><div>📅</div><h3>Programación de riego</h3><p>Espacio preparado para publicar los turnos y horarios cuando sean definidos oficialmente.</p><button class="link-btn" data-modal="programacion">Consultar →</button></article>
-          <article class="service-card"><div>📝</div><h3>Solicitudes y trámites</h3><p>Información para presentar solicitudes ante la asociación.</p><button class="link-btn" data-modal="tramites">Ver información →</button></article>
-          <article class="service-card"><div>💧</div><h3>Uso eficiente del agua</h3><p>Recomendaciones para el aprovechamiento responsable del recurso.</p><button class="link-btn" data-modal="agua">Recomendaciones →</button></article>
-          <article class="service-card"><div>📢</div><h3>Comunicados</h3><p>Consulta avisos, reuniones, mantenimientos y convocatorias.</p><a class="link-btn" href="#noticias">Ver novedades →</a></article>
-        </div>
-      </div>
-    </section>
+        </article>
 
-    <section class="section news-section" id="noticias">
-      <div class="container">
-        <div class="section-heading"><div><p class="section-kicker">ACTUALIDAD</p><h2>Noticias y actividades</h2></div><a class="text-btn" href="#noticias">Ver todas →</a></div>
-        <div class="news-grid">
-          <article class="news-card official-news"><div class="news-icon">📢</div><div><small>Comunicado No. 001</small><h3>Información a los asociados y usuarios</h3><p>La Junta Directiva informa sobre suspensión del servicio por obligaciones pendientes, prohibición de alterar contadores, registros, tubería y sellos, y las condiciones para la reconexión.</p><a class="text-btn" href="assets/documentos/Comunicado-001-ASOTOQUECHA.pdf" target="_blank" rel="noopener">Leer comunicado →</a></div></article>
-          <article class="news-card official-news"><div class="news-icon">📋</div><div><small>Documento oficial</small><h3>Listado final de usuarios</h3><p>El documento aportado contiene el listado final del distrito de riego ASOTOQUECHA.</p><a class="text-btn" href="assets/documentos/Listado-usuarios-ASOTOQUECHA.pdf" target="_blank" rel="noopener">Consultar documento →</a></div></article>
-          <article class="news-card official-news"><div class="news-icon">📜</div><div><small>Documento institucional</small><h3>Estatutos de ASOTOQUECHA</h3><p>Consulta el archivo de estatutos suministrado para la sección institucional.</p><a class="text-btn" href="assets/documentos/Estatutos-Asotoquecha.pdf" target="_blank" rel="noopener">Abrir estatutos →</a></div></article>
-        </div>
-      </div>
-    </section>
 
-    <section class="section transparency" id="transparencia">
-      <div class="container split-section">
-        <div>
-          <p class="section-kicker">INFORMACIÓN PÚBLICA</p>
-          <h2>Transparencia</h2>
-          <p>Consulta los documentos oficiales suministrados para este sitio. Los contenidos se presentan sin modificar su carácter documental.</p>
-        </div>
-        <div class="document-list">
-          <a href="assets/documentos/Estatutos-Asotoquecha.pdf" target="_blank" rel="noopener">📜 Estatutos de ASOTOQUECHA <span>↗</span></a>
-          <a href="assets/documentos/Comunicado-001-ASOTOQUECHA.pdf" target="_blank" rel="noopener">📢 Comunicado No. 001 <span>↗</span></a>
-          <a href="assets/documentos/Listado-usuarios-ASOTOQUECHA.pdf" target="_blank" rel="noopener">👥 Listado final de usuarios <span>↗</span></a>
-          <button data-doc="Actas de asamblea">📄 Actas de asamblea <span>Próximamente</span></button>
-          <button data-doc="Informes de gestión">📄 Informes de gestión <span>Próximamente</span></button>
-        </div>
-      </div>
-    </section>
+        <article class="news-card official-news">
 
-    <section class="section contact" id="contacto">
-      <div class="container contact-grid">
-        <div>
-          <p class="section-kicker">ESTAMOS PARA AYUDARTE</p>
-          <h2>Contacto</h2>
-          <ul class="contact-list">
-            <li>☎ <span><b>Representante Legal y Presidente</b><br><a href="tel:+573107951735">310 795 1735</a></span></li>
-            <li>☎ <span><b>Tesorería</b><br><a href="tel:+573124545446">312 454 5446</a></span></li>
-            <li>✉ <span><b>Correo institucional</b><br><a href="mailto:distritoasotoquecha@gmail.com">distritoasotoquecha@gmail.com</a></span></li>
-            <li>📍 <span><b>Ubicación</b><br>Información pendiente de confirmar</span></li>
-          </ul>
-        </div>
-        <form class="contact-form" id="contactForm">
-          <h3>Escríbenos</h3>
-          <label>Nombre<input type="text" name="nombre" required></label>
-          <label>Correo electrónico<input type="email" name="correo" required></label>
-          <label>Mensaje<textarea name="mensaje" rows="5" required></textarea></label>
-          <button class="btn btn-primary" type="submit">Enviar mensaje →</button>
-          <p class="form-note" id="formNote"></p>
-        </form>
-      </div>
-    </section>
-  </main>
+          <div class="news-icon">📋</div>
 
-  <footer>
-    <div class="container footer-top">
-      <div class="footer-brand"><div class="brand-mark"><img src="assets/logo-asotoquecha.jpeg" alt="Logo oficial de ASOTOQUECHA"></div><div><strong>ASOTOQUECHA</strong><span>Distrito de Adecuación de Tierras de Pequeña Escala<br>de Toquecha y Tota</span></div></div>
-      <p class="footer-phrase">El agua nos une,<br><em>el campo nos fortalece</em></p>
-      <nav><a href="#inicio">Inicio</a><a href="#quienes">Quiénes somos</a><a href="#distrito">Distrito de riego</a><a href="#usuarios">Usuarios</a><a href="#noticias">Noticias</a><a href="#transparencia">Transparencia</a><a href="#contacto">Contacto</a></nav>
+          <div>
+            <small>Documento oficial</small>
+
+            <h3>Listado final de usuarios</h3>
+
+            <p>
+              El documento aportado contiene el listado final del distrito de riego ASOTOQUECHA.
+            </p>
+
+            <a class="text-btn"
+               href="assets/documentos/Listado-usuarios-ASOTOQUECHA.pdf"
+               target="_blank"
+               rel="noopener">
+              Consultar documento →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card official-news">
+
+          <div class="news-icon">📜</div>
+
+          <div>
+            <small>Documento institucional</small>
+
+            <h3>Estatutos de ASOTOQUECHA</h3>
+
+            <p>
+              Consulta el archivo de estatutos suministrado para la sección institucional.
+            </p>
+
+            <a class="text-btn"
+               href="assets/documentos/Estatutos-Asotoquecha.pdf"
+               target="_blank"
+               rel="noopener">
+              Abrir estatutos →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card official-news">
+
+          <div class="news-icon">📄</div>
+
+          <div>
+            <small>Acta de Asamblea</small>
+
+            <h3>Asamblea del 06 de agosto de 2023</h3>
+
+            <p>
+              Consulta el acta de la reunión extraordinaria realizada el 06 de agosto de 2023.
+            </p>
+
+            <a class="text-btn"
+               href="assets/documentos/Asamblea 06 agosto 2023.pdf"
+               target="_blank"
+               rel="noopener">
+              Leer acta →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card official-news">
+
+          <div class="news-icon">📄</div>
+
+          <div>
+            <small>Acta de Asamblea</small>
+
+            <h3>Asamblea del 17 de febrero</h3>
+
+            <p>
+              Consulta el acta de la Asamblea de ASOTOQUECHA correspondiente al 17 de febrero.
+            </p>
+
+            <a class="text-btn"
+               href="assets/documentos/Asamblea 17 de febrero Asotoquecha.pdf"
+               target="_blank"
+               rel="noopener">
+              Leer acta →
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
     </div>
-    <div class="container footer-bottom"><span>© 2026 ASOTOQUECHA. Todos los derechos reservados.</span><span>Distrito de Adecuación de Tierras de Pequeña Escala de Toquecha y Tota</span></div>
-  </footer>
 
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-box">
-      <button class="modal-close" aria-label="Cerrar">×</button>
-      <h3 id="modalTitle"></h3>
-      <p id="modalText"></p>
-      <button class="btn btn-primary modal-ok">Entendido</button>
+  </section>
+
+
+  <section class="section transparency" id="transparencia">
+
+    <div class="container split-section">
+
+      <div>
+
+        <p class="section-kicker">INFORMACIÓN PÚBLICA</p>
+
+        <h2>Transparencia</h2>
+
+        <p>
+          Consulta los documentos oficiales suministrados para este sitio.
+          Los contenidos se presentan sin modificar su carácter documental.
+        </p>
+
+      </div>
+
+
+      <div class="document-list">
+
+        <a href="assets/documentos/Estatutos-Asotoquecha.pdf"
+           target="_blank"
+           rel="noopener">
+          📜 Estatutos de ASOTOQUECHA <span>↗</span>
+        </a>
+
+        <a href="assets/documentos/Comunicado-001-ASOTOQUECHA.pdf"
+           target="_blank"
+           rel="noopener">
+          📢 Comunicado No. 001 <span>↗</span>
+        </a>
+
+        <a href="assets/documentos/Listado-usuarios-ASOTOQUECHA.pdf"
+           target="_blank"
+           rel="noopener">
+          👥 Listado final de usuarios <span>↗</span>
+        </a>
+
+        <a href="assets/documentos/Asamblea 06 agosto 2023.pdf"
+           target="_blank"
+           rel="noopener">
+          📄 Acta de Asamblea – 06 de agosto de 2023 <span>↗</span>
+        </a>
+
+        <a href="assets/documentos/Asamblea 17 de febrero Asotoquecha.pdf"
+           target="_blank"
+           rel="noopener">
+          📄 Acta de Asamblea – 17 de febrero <span>↗</span>
+        </a>
+
+        <button data-doc="Informes de gestión">
+          📄 Informes de gestión <span>Próximamente</span>
+        </button>
+
+      </div>
+
     </div>
+
+  </section>
+
+
+  <section class="section contact" id="contacto">
+
+    <div class="container contact-grid">
+
+      <div>
+
+        <p class="section-kicker">ESTAMOS PARA AYUDARTE</p>
+
+        <h2>Contacto</h2>
+
+        <ul class="contact-list">
+
+          <li>
+            ☎
+            <span>
+              <b>Representante Legal y Presidente</b><br>
+              <a href="tel:+573107951735">310 795 1735</a>
+            </span>
+          </li>
+
+          <li>
+            ☎
+            <span>
+              <b>Tesorería</b><br>
+              <a href="tel:+573124545446">312 454 5446</a>
+            </span>
+          </li>
+
+          <li>
+            ✉
+            <span>
+              <b>Correo institucional</b><br>
+              <a href="mailto:distritoasotoquecha@gmail.com">
+                distritoasotoquecha@gmail.com
+              </a>
+            </span>
+          </li>
+
+          <li>
+            📍
+            <span>
+              <b>Ubicación</b><br>
+              Información pendiente de confirmar
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <form class="contact-form" id="contactForm">
+
+        <h3>Escríbenos</h3>
+
+        <label>
+          Nombre
+          <input type="text" name="nombre" required>
+        </label>
+
+        <label>
+          Correo electrónico
+          <input type="email" name="correo" required>
+        </label>
+
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="5" required></textarea>
+        </label>
+
+        <button class="btn btn-primary" type="submit">
+          Enviar mensaje →
+        </button>
+
+        <p class="form-note" id="formNote"></p>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-top">
+
+    <div class="footer-brand">
+
+      <div class="brand-mark">
+        <img src="assets/logo-asotoquecha.jpeg" alt="Logo oficial de ASOTOQUECHA">
+      </div>
+
+      <div>
+        <strong>ASOTOQUECHA</strong>
+
+        <span>
+          Distrito de Adecuación de Tierras de Pequeña Escala<br>
+          de Toquecha y Tota
+        </span>
+      </div>
+
+    </div>
+
+    <p class="footer-phrase">
+      El agua nos une,<br>
+      <em>el campo nos fortalece</em>
+    </p>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#distrito">Distrito de riego</a>
+      <a href="#usuarios">Usuarios</a>
+      <a href="#noticias">Noticias</a>
+      <a href="#transparencia">Transparencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
   </div>
 
-  <div class="modal" id="portalModal" aria-hidden="true">
-    <div class="modal-box portal-box">
-      <button class="modal-close" aria-label="Cerrar">×</button>
-      <div class="portal-icon">👤</div>
-      <h3>Portal del Usuario</h3>
-      <p>Esta primera versión deja preparado el acceso. Para conectar usuarios reales se requiere una base de datos y un sistema de autenticación.</p>
-      <label>Documento o usuario<input type="text" id="demoUser" placeholder="Ej. 1234567890"></label>
-      <label>Contraseña<input type="password" placeholder="••••••••"></label>
-      <button class="btn btn-primary" id="demoLogin">Ingresar</button>
-      <p class="form-note" id="portalNote"></p>
-    </div>
+
+  <div class="container footer-bottom">
+
+    <span>
+      © 2026 ASOTOQUECHA. Todos los derechos reservados.
+    </span>
+
+    <span>
+      Distrito de Adecuación de Tierras de Pequeña Escala de Toquecha y Tota
+    </span>
+
   </div>
 
-  <script src="script.js"></script>
+</footer>
+
+
+<div class="modal" id="modal" aria-hidden="true">
+
+  <div class="modal-box">
+
+    <button class="modal-close" aria-label="Cerrar">×</button>
+
+    <h3 id="modalTitle"></h3>
+
+    <p id="modalText"></p>
+
+    <button class="btn btn-primary modal-ok">
+      Entendido
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="modal" id="portalModal" aria-hidden="true">
+
+  <div class="modal-box portal-box">
+
+    <button class="modal-close" aria-label="Cerrar">×</button>
+
+    <div class="portal-icon">👤</div>
+
+    <h3>Portal del Usuario</h3>
+
+    <p>
+      Esta primera versión deja preparado el acceso.
+      Para conectar usuarios reales se requiere una base de datos y un sistema de autenticación.
+    </p>
+
+    <label>
+      Documento o usuario
+      <input type="text" id="demoUser" placeholder="Ej. 1234567890">
+    </label>
+
+    <label>
+      Contraseña
+      <input type="password" placeholder="••••••••">
+    </label>
+
+    <button class="btn btn-primary" id="demoLogin">
+      Ingresar
+    </button>
+
+    <p class="form-note" id="portalNote"></p>
+
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
